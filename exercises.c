@@ -28,7 +28,7 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego inv
 */
 void reverseArray(int arr[], int size) 
 {
-  arrInvint [size];
+  arr arrInvint [size];
   for (int i = 0 ; i < size ;i++)
   {
     arrInv[i] = arr[size - i];
