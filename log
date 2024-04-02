@@ -149,3 +149,17 @@ Tue 02 Apr 2024 07:48:28 PM UTC:
  tests:  0|6
 total_score: 10/70
 17a7625
+Tue 02 Apr 2024 07:51:28 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:36:18: error: expected ‘,’ or ‘;’ before ‘:’ token
+   36 |   for (int i = 0 : i < size ; i++)
+      |                  ^
+exercises.c:36:34: error: expected ‘;’ before ‘)’ token
+   36 |   for (int i = 0 : i < size ; i++)
+      |                                  ^
+      |                                  ;
+Compilation failed
+ba23d39
