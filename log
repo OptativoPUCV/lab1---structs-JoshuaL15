@@ -229,3 +229,12 @@ Tue 02 Apr 2024 08:13:26 PM UTC:
  tests:  0|4
 total_score: 30/70
 f4a4a48
+Tue 02 Apr 2024 08:41:25 PM UTC: 
+ exercises.c | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+Tue 02 Apr 2024 08:45:02 PM UTC: 
+ exercises.c | 36 ++++++++++++++++++++++++++++++++++--
+ 1 file changed, 34 insertions(+), 2 deletions(-)
+ tests:  0|3
+total_score: 40/70
+ce83c93
