@@ -50,24 +50,37 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize)
 { 
-  int arrP[size];
-  int j = 0;
-  for (int i = 0 ; i < size; i++)
-    {
-      if (arr[i] % 2 == 0) 
-      {
-        arrP[j] = arr[i];
-        j++;
-      }
-    
+  int *arrP = NULL; // Inicializar el puntero a NULL
+
+    // Contar la cantidad de números pares en el arreglo original
+    int countPares = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            countPares++;
+        }
     }
-  if (j != 0 ) {
+
+    // Asignar memoria dinámicamente para el nuevo arreglo
+    arrP = (int *)malloc(countPares * sizeof(int));
+    if (arrP == NULL) {
+        // Si malloc falla, devolver NULL
+        *newSize = 0;
+        return NULL;
+    }
+
+    // Llenar el nuevo arreglo con los números pares
+    int j = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            arrP[j] = arr[i];
+            j++;
+        }
+    }
+
+    // Actualizar el tamaño del nuevo arreglo
+    *newSize = countPares;
+
     return arrP;
-  }
-  else {
-    free(arrP);
-    return NULL ;
-  }
 }
 
 /*

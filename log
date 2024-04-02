@@ -217,3 +217,9 @@ exercises.c:53:7: note: returned from ‘__builtin_alloca_with_align’
 cc1: all warnings being treated as errors
 Compilation failed
 cf00de4
+Tue 02 Apr 2024 08:12:19 PM UTC: 
+ exercises.c | 37 +++++++++++++++++++++++++------------
+ 1 file changed, 25 insertions(+), 12 deletions(-)
+ tests:  0|4
+total_score: 30/70
+22a8307
