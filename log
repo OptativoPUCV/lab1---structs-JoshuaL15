@@ -45,3 +45,24 @@ Tue 02 Apr 2024 07:26:49 PM UTC:
  tests:  0|6
 total_score: 10/70
 6e47478
+Tue 02 Apr 2024 07:36:41 PM UTC: 
+ exercises.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:32:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   32 |   for (int i = 0 ; i < size ;i++);
+      |   ^~~
+exercises.c:33:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   33 |   {
+      |   ^
+exercises.c:34:12: error: ‘i’ undeclared (first use in this function)
+   34 |     arrInv[i] = arr[size - i - 1 ];
+      |            ^
+exercises.c:34:12: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:31:7: error: variable ‘arrInv’ set but not used [-Werror=unused-but-set-variable]
+   31 |   int arrInv[size];
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+569123b
