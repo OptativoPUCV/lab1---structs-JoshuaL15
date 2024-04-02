@@ -183,3 +183,20 @@ Tue 02 Apr 2024 07:55:22 PM UTC:
  tests:  0|5
 total_score: 20/70
 4c3d91d
+Tue 02 Apr 2024 08:01:16 PM UTC: 
+ exercises.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:65:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   65 |   if (j=! 0 ) return j ;
+      |       ^
+exercises.c:65:22: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   65 |   if (j=! 0 ) return j ;
+      |                      ^
+exercises.c:53:7: error: variable ‘arrP’ set but not used [-Werror=unused-but-set-variable]
+   53 |   int arrP[size];
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c9cae5a
