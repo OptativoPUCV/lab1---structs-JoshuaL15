@@ -200,3 +200,20 @@ exercises.c:53:7: error: variable ‘arrP’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 c9cae5a
+Tue 02 Apr 2024 08:04:37 PM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:65:12: error: function returns address of local variable [-Werror=return-local-addr]
+   65 |     return arrP;
+      |            ^~~~
+exercises.c:68:5: error: ‘free’ called on pointer to an unallocated object [-Werror=free-nonheap-object]
+   68 |     free(arrP);
+      |     ^~~~~~~~~~
+exercises.c:53:7: note: returned from ‘__builtin_alloca_with_align’
+   53 |   int arrP[size];
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cf00de4

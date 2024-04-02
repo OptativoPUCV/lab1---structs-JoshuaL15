@@ -61,8 +61,13 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
       }
     
     }
-  if (j == 0) return NULL; 
-  if (j=! 0 ) return j ;
+  if (j != 0 ) {
+    return arrP;
+  }
+  else {
+    free(arrP);
+    return NULL ;
+  }
 }
 
 /*
