@@ -163,3 +163,17 @@ exercises.c:36:34: error: expected ‘;’ before ‘)’ token
       |                                  ;
 Compilation failed
 ba23d39
+Tue 02 Apr 2024 07:51:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:36:22: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   36 |   for (int i = 0 , i < size ;i++)
+      |                      ^
+exercises.c:36:33: error: expected ‘;’ before ‘)’ token
+   36 |   for (int i = 0 , i < size ;i++)
+      |                                 ^
+      |                                 ;
+Compilation failed
+5d533bf
