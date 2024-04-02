@@ -143,3 +143,9 @@ exercises.c:31:7: error: variable ‘arrInv’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 66b86b9
+Tue 02 Apr 2024 07:48:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 10/70
+17a7625
