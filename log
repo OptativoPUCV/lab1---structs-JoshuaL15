@@ -88,3 +88,17 @@ exercises.c:31:7: error: variable ‘arrInv’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 1f7b154
+Tue 02 Apr 2024 07:43:43 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:31:3: error: ‘arrInvint’ undeclared (first use in this function)
+   31 |   arrInvint [size];
+      |   ^~~~~~~~~
+exercises.c:31:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:34:5: error: ‘arrInv’ undeclared (first use in this function)
+   34 |     arrInv[i] = arr[size - i];
+      |     ^~~~~~
+Compilation failed
+2c3c3aa
