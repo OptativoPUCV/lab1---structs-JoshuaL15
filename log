@@ -313,3 +313,9 @@ In function ‘strncpy’,
 cc1: all warnings being treated as errors
 Compilation failed
 f0abc56
+Sun 19 May 2024 01:26:28 AM UTC: 
+ exercises.c | 42 ++++++++++++++----------------------------
+ 1 file changed, 14 insertions(+), 28 deletions(-)
+ tests:  0|0
+total_score: 70/70
+afecfee
